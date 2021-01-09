@@ -2,9 +2,7 @@
 	The below procedure is for usage with Azure Synapse (Formerly SQL DW).
 	Purpose: Imports external data into DW table and audits results. This would be used as a first step in a staging process.
 	
-	Usage example: EXEC etl.uspImportExternalTable @ExternaTableName = 'lake_stg_customers'
-												  ,@StagingTableName = 'stg_customers'
-												  ,@SchemaName = 'sales'
+	Usage example: EXEC etl.uspImportExternalTable @ExternaTableName = 'lake_stg_customers', @StagingTableName = 'stg_customers', @SchemaName = 'sales'
 												  
 	General convention kept is @PascalCase for Procedure parameters, @camelCase for internal variables.
 
